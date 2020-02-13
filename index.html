@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stephanie Kerr's Show 'n Tell: mix-blend-mode</title>
-    <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Titillium+Web:400,400i,700&display=swap"
+    <script src="https://kit.fontawesome.com/7e17416451.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Leckerli+One|Courier+Prime|Titillium+Web:400,400i,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- The use case of dark mode idea came from https://dev.wgao19.cc/sun-moon-blending-mode/ -->
     <div id="impress">
 
         <div class="step title" data-x="-1500" data-y="-1500">
@@ -30,11 +33,37 @@
             <p>It has <span class="emphasis">16</span> keyword values available to use that direct how the element will
                 blend - ANY element, including SVGs!</p>
             <p class="footnote">*not supported in IE... big surprise</p>
+            <img class="caniuse" src="./assets/caniuse.png"
+                alt="screenshot of caniuse.com mix-blend-mode - not accessible on IE and Edge, accessible on Firefox, Chrome and Safari">
         </div>
 
+        <div class="step ex-slide" data-x="1500" data-y="-1500">
+            <h4>Keywords in Use</h4>
+            <div class="example">
+                <p class="example-text ex-content">We're mixing & blending</p>
+                <i class="fas fa-leaf ex-content" aria-hidden="true"></i>
+            </div>
+            <button class="switch">switch to: multiply</button>
+        </div>
 
+        <div class="step dark-mode" data-x="3000" data-y="-1500">
+            <h4>Use Case: Dark Mode!</h4>
+            <p>We can take advantage of <span class="effect1">mix-blend-mode's</span> <span
+                    class="effect2">difference</span> keyword which subtracts the darker of 2 colours from the lightest
+                (think in rgb values!).</p>
+            <p>Simply throw up a full-screen fixed div with <span class="effect2">background: white</span> (or light hue
+                of any colour) and <span class="effect1">mix-blend-mode: difference</span> and <span
+                    class="emphasis">the
+                    magic
+                    happens</span></p>
+            <p class="center emoji"><span class="emphasis">✨✨✨</span></p>
+            <p>To make sure your assets (i.e. logos) don't get affected, simply add the CSS property <span
+                    class="effect2">isolation: isolate</span> on those elements.</p>
+        </div>
     </div>
     <!--./impress-->
+    <div class="dark-mode-screen"></div>
+    <button class="light-dark"></button>
     <!-- <div class="step" data-x="" data-y=""> -->
     <script src="./js/impress.js"></script>
     <script>impress().init();</script>
