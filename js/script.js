@@ -56,10 +56,12 @@ myApp.listenUp = function() {
 
         if (myApp.$darkDiv.css('opacity') === '0') {
             myApp.$darkDiv.css('opacity', '1');
+            myApp.$darkDiv.css('display', 'block');
             myApp.$darkMode.css('background', 'white');
         } else {
             myApp.$darkDiv.css('opacity', '0');
             myApp.$darkMode.css('background', 'black');
+            myApp.$darkDiv.css('display', 'none');
         }
     });
 }

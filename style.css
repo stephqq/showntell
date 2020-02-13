@@ -200,4 +200,5 @@ h4 {
     mix-blend-mode: difference;
     opacity: 0;
     transition: all 1s;
+    display: none;
 }
