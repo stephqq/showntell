@@ -31,7 +31,7 @@ body {
     height: 80vh;
     border-radius: 10px;
     background: rgb(165,169,147);
-    padding: 75px;
+    padding: 25px;
     box-shadow: 0 0 25px black;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@ h4 {
     font-family: 'Courier Prime', sans-serif;
     font-size: 2.75rem;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 .effect1 {
@@ -107,12 +107,6 @@ h4 {
 .emphasis {
     font-weight: bold;
     font-size: 2.75rem;
-}
-
-.footnote {
-    font-size: 1.75rem;
-    font-weight: bold;
-    text-align: right;
 }
 
 .example {
@@ -143,8 +137,8 @@ h4 {
 
 .switch {
     position: absolute;
-    top: 75px;
-    left: 25px;
+    bottom: 10%;
+    right: 0;
     transform: rotate(-25deg);
     background: rgb(238,200,202);
     border: none;
@@ -161,7 +155,6 @@ h4 {
 .dark-mode {
     background: white;
     justify-content: flex-start;
-    padding: 50px;
 }
 
 .center {
@@ -169,7 +162,7 @@ h4 {
 }
 
 .dark-mode p {
-    line-height: 2;
+    line-height: 1.75;
     margin-bottom: 15px;
 }
 
@@ -188,6 +181,7 @@ h4 {
 
 .emoji {
     isolation: isolate;
+    z-index: 1;
 }
 
 .dark-mode-screen {
