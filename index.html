@@ -61,6 +61,22 @@
             <p>To make sure your assets (i.e. logos) don't get affected, simply add the CSS property <span
                     class="effect2">isolation: isolate</span> on those elements.</p>
         </div>
+
+        <div class="step" data-x="4500" data-y="-1500">
+            <h4>Code:</h4>
+            <img src="./assets/code-snippet.png" alt=".dark-mode-screen {
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: white;
+                mix-blend-mode: difference;
+                opacity: 0;
+                transition: all 1s;
+                display: none;
+            }">
+        </div>
     </div>
     <!--./impress-->
     <div class="dark-mode-screen"></div>
